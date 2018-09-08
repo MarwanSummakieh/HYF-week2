@@ -1,0 +1,92 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+background-color: lightblue;
+
+}
+h1,h2{
+text-align: center;
+padding: 0.5e.m;
+}
+/*-list-*/
+.grid-item{
+background-color:lightblue;
+color: black;
+border: 1px solid grey;
+width: 24%;
+height: 22vw;
+margin-: 0.5%;
+box-sizing: border-box;
+}
+.grid-item:hover{
+background-color: blue;
+color: black;
+}
+li{
+list-style-type: none;
+}
+h3{
+text-align: center;
+padding: 5px;
+font-size: 1.5vw;
+}
+img{
+width: 20vw;
+display: block;
+margin: 0 auto;
+}
+p{
+text-align: justify;
+padding: 5px;
+font-size: 1vw;
+
+}
+/*-first item-*/
+ul li:nth-child(1){
+width: 49%;
+
+}
+/*-with floats-*/
+#grid-floats .grid-item{
+float: left;
+}
+#grid-floats{
+background-color: lightblue;
+display: inline-block;
+}
+/*-with flexbox-*/
+main section:nth-child(2){
+clear: both;
+}
+#grid-flex .grid-item{
+background-color: lightblue;
+color: black;
+}
+#grid-flex .grid-item:hover{
+background-color: blue;
+color: black;
+}
+#grid-flex{
+background-color: lightblue;
+display: flex;
+flex-wrap: wrap;
+}
+
+/*tabletv*/
+@media screen and (max-width: 768px){
+ul li:nth-child(-n+2){
+width: 45%;
+}
+ul li:nth-child(+n+3){
+width: 32%;
+}
+/*mobile phonev*/
+@media screen and (max-width: 350px){
+ul li:nth-child(1){
+width: 98%;
+}
+ul li:nth-child(+n+2){
+width: 45%;
+}
